@@ -1,0 +1,28 @@
+class pessoa{
+    #nome
+    #idade
+    constructor(nome,idade){
+        this.#nome=nome
+        this.#idade=idade
+    }
+obterNome(){
+   return this.#nome
+}
+obterIdade(){
+    return this.#idade
+
+}
+definirIdade(Idade){
+    if(Idade > 0){
+    this.#idade = Idade
+}else{
+    console.log("idade inválida")
+}
+}
+}
+const pessoa1 = new pessoa("Carlinhos", 18)
+
+console.log(pessoa1.obterNome())
+console.log(pessoa1.obterIdade())
+pessoa1.definirIdade(50)
+console.log(pessoa1.obterIdade())
